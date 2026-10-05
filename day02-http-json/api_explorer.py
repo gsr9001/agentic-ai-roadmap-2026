@@ -1,4 +1,5 @@
-'''import requests
+'''Sample GET Request:
+import requests
 
 url = "https://jsonplaceholder.typicode.com/posts"
 
@@ -41,7 +42,6 @@ def get_user(user_id):
     else:
         print("Request failed")
 
-
 def get_posts(user_id):
     url = f"{BASE_URL}/posts"
 
@@ -62,7 +62,6 @@ def get_posts(user_id):
             print("\nPost ID:", post["id"])
             print("Title:", post["title"])
 
-
 def create_post():
     url = f"{BASE_URL}/posts"
 
@@ -77,7 +76,6 @@ def create_post():
     print("\n--- CREATE POST ---")
     print("Status Code:", response.status_code)
     print("Response:", response.json())
-
 
 get_user(5)
 
